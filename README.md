@@ -14,6 +14,7 @@ This repository is dedicated to promoting diversity and inclusion in the tech co
 - Write blog posts, articles, or any other content that aligns with our mission.
 
 ### 3. Frontend Development
+
 - Contribute HTML, CSS, and JavaScript code to build and improve the functionality of our website.
 - Implement responsive design principles to ensure compatibility across various devices and screen sizes.
 
@@ -23,6 +24,8 @@ This repository is dedicated to promoting diversity and inclusion in the tech co
 
 ## Getting Started
 To get started with contributing to our project, follow these steps:
+
+The initial design file for development is available [here](https://www.figma.com/file/SoRV9FNJ5Po2dXx4caAvmM/WGMIT-Website?type=design&node-id=0%3A1&mode=design&t=uF5aAC1SuVbgK1OC-1). This serves as the starting point for the development process.
 
 1. **Fork the Repository:**
    - Fork this repository to your GitHub account to create your own copy of the project.
