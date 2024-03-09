@@ -33,7 +33,7 @@ The initial design file for development is available [here](https://www.figma.co
 2. **Clone the Repository:**
    - Clone the forked repository to your local machine using the following command:
      ```
-     git clone https://github.com/your-username/repository-name.git
+     git clone https://github.com/MLSA-WGMIT/WGMIT-Website.git
      ```
 
 3. **Make Changes:**
