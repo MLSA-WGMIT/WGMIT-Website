@@ -4,7 +4,8 @@
   "description": "This repository is dedicated to promoting diversity and inclusion in the tech community through a collaborative effort in UI/UX design, content creation, development, and documentation. We welcome contributions from individuals of all backgrounds, skill levels, and experiences.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./styles.css -o ./output.css --watch"
   },
   "repository": {
     "type": "git",
