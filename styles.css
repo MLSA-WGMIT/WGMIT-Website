@@ -3,8 +3,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Pre-defined colors */
 :root {
     --quote-text: #C988C6;
     --text-color: #000000;
+    --background-color: #FEF3FF;
 }
 
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* SECTION */
+section {
+    margin: 4rem 0;
+}
+
+/* SHOWCASE Section */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase img {
+    height: auto;
+    max-width: 1250px;
+}
+
+.showcase .container {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #C988C6;
+}
+
+.showcase .slideshow-dot {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+/* ABOUT US Section */
+section .about-us {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+/* This is the color of most of the headers. */
+.linear-text-gradient h2 {
+    font-size: 2rem;
+    line-height: 1.6;
+    background: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+}
