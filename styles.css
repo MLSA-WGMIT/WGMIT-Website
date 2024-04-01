@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --quote-text: #C988C6;
+    --text-color: #000000;
+}
+
