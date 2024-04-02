@@ -4,10 +4,12 @@
 @tailwind utilities;
 
 /* Pre-defined colors */
+/* Use this to predefine all the color of the headers. */
 :root {
     --quote-text: #C988C6;
     --text-color: #000000;
     --background-color: #FEF3FF;
+    --pink-paragraph: pink;
 }
 
 /*
@@ -21,8 +23,24 @@ body {
     line-height: inherit;
     /* 2 */
     background-color: var(--background-color);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 3rem 0;
+    text-align: center;
 }
 
 /* SECTION */
@@ -55,12 +73,103 @@ section {
     display: flex;
     flex-direction: row;
     font-size: 12px;
+    color: var(--text-color);
 }
 
 /* ABOUT US Section */
-section .about-us {
+ .about-us{
     display: grid;
     grid-template-columns: 2fr 4fr;
+    text-align: center;
+    margin: auto;
+}
+
+.about-us h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    background: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    margin: 3rem 0;
+}
+
+.about-us p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/* OUR MISSION Section */
+.our-mission {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-mission p {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-mission h2 {
+    background: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+}
+
+.our-mission img {
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.our-mission .quote {
+    font-size: 35px;
+}
+
+.our-mission .pink-paragraph {
+    font-weight: 500;
+    color: var(--pink-paragraph);
+}
+
+.our-mission .quote-author {
+    font-size: 1rem;
+}
+
+.our-mission .six-ladies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.our-mission .six-ladies img {
+    max-width: 70vw;
+    height: auto;
+    margin: auto;
+}
+
+.our-mission .four-women {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
 }
 
 /* This is the color of most of the headers. */
