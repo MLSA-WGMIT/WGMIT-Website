@@ -6,10 +6,13 @@
 /* Pre-defined colors */
 /* Use this to predefine all the color of the headers. */
 :root {
-    --quote-text: #C988C6;
     --text-color: #000000;
     --background-color: #FEF3FF;
-    --pink-paragraph: pink;
+    --about-us-h2: linear-gradient(91.42deg, #FF4081 6.1%, #673AB7 95.32%);
+    --our-mission-h2: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    --events-h2: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    --comments-h2: linear-gradient(91.42deg, #FF4081 6.1%, #673AB7 95.32%);
+    --quote-text: #C988C6;
 }
 
 /*
@@ -29,9 +32,9 @@ body {
 }
 
 p {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 1.6;
+    /* font-family is inter */
     text-align: center;
     margin: auto;
 }
@@ -45,6 +48,7 @@ section {
 .showcase {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -59,44 +63,56 @@ section {
 
 .showcase p {
     color: #C988C6;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
 }
 
 .showcase .slideshow-dot {
     display: flex;
     flex-direction: row;
+    justify-items: center;
+    align-items: center;
     font-size: 12px;
     color: var(--text-color);
 }
 
 /* ABOUT US Section */
 .about-us{
-    display: grid;
-    grid-template-columns: 2fr 4fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
-    margin: auto;
     width: 100%;
-}
-
-.about-us h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.6;
-    background: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
-    -webkit-background-clip: text; 
-    background-clip: text; 
-    color: transparent;
-    margin: 3rem 0;
-    text-align: center;
-}
-
-.about-us p {
-    font-size: 2.2rem;
 }
 
 .about-us img {
-    width: 100%;
+    width: 100vw;
     height: auto;
     margin: auto;
+}
+
+/* All the headers of each section */
+.about-us h2, .our-mission h2 {
+    font-size: 4.875rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    background: var(--about-us-h2);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+}
+
+.about-us p {
+    font-size: 1.5rem;
+    width: 50%;
+    flex: 40%;
 }
 
 /* OUR MISSION Section */
@@ -109,62 +125,68 @@ section {
     width: 100%;
 }
 
-.our-mission p {
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .our-mission h2 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 1.6;
-    background: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    background: var(--our-mission-h2);
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;
-    margin: 3rem 0;
-    text-align: center;
 }
 
-.our-mission img {
-    width: 100%;
-    height: auto;
-    margin: auto;
+.our-mission p {
+    text-align: left;
+    font-size: 2rem;
+    width: 60%;padding-bottom: 6rem;
 }
 
-.our-mission .quote {
-    font-size: 35px;
-}
-
-.our-mission .pink-paragraph {
-    font-weight: 500;
-    color: var(--pink-paragraph);
-}
-
-.our-mission .quote-author {
-    font-size: 1rem;
-}
-
+/* Quotation mark in this section */
 .our-mission .six-ladies {
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    text-align: center;
-    margin: auto;
-    padding: 6rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our-mission .six-ladies .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 
 .our-mission .six-ladies img {
+    border-radius: 17px;
     width: 100%;
     height: auto;
-    margin: auto;
 }
 
-.our-mission .six-ladies .flex-1, .our-mission .four-women .flex-2 {
+.our-mission .six-ladies .quote-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
+
+.our-mission .six-ladies figure {
+    color: var(--quote-text);
+    font-size: 2.25rem;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.our-mission .six-ladies .quote-container .quotation-mark {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.our-mission .quote-author {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+
 
 .our-mission .four-women {
     display: grid;
@@ -173,14 +195,80 @@ section {
     margin: auto;
 }
 
-/* This is the color of most of the headers. */
-.linear-text-gradient h2 {
-    font-size: 2rem;
+.on-a-mission {
+    color: #D9D9D9;
+}
+
+.our-mission .six-ladies, .our-mission .four-women, .on-a-mission {
+    padding-bottom: 6rem;
+}
+
+/* EVENTS Section */
+.events h2{
+    font-size: 4rem;
+    font-weight: 700;
     line-height: 1.6;
-    background: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
+    background: var(--events-h2);
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;
+    margin: 3rem 0;
+    text-align: center;
+    /* font-family is inter */
+
+}
+
+.events p {
+    /* font-family: inter; */
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.events .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.events img {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 3.8rem;
+}
+
+/* COMMENTS Section */
+.comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.comments h2 {
+    /* font-family: inter; */
+    font-size: 4.9rem;
+    font-weight: 700;
+    line-height: 1.6;
+    background: var(--comments-h2);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    margin: 3rem 0;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.comments p {
+    /* font-family: inder; */
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+/* Quotation mark in this section */
+.comments .quote {
+    font-size: 6rem;
+    font-weight: 700;
 }
 
 /* Tables responsiveness for the width of screen not greater than 760px */
