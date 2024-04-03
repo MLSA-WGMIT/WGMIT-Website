@@ -11,7 +11,7 @@
     --about-us-h2: linear-gradient(91.42deg, #FF4081 6.1%, #673AB7 95.32%);
     --our-mission-h2: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
     --events-h2: linear-gradient(90deg, rgba(103, 58, 183, 0.66) 0%, rgba(158, 29, 29, 0.91) 100%);
-    --comments-h2: linear-gradient(91.42deg, #FF4081 6.1%, #673AB7 95.32%);
+    --comments-h3: linear-gradient(91.42deg, #FF4081 6.1%, #673AB7 95.32%);
     --quote-text: #C988C6;
 }
 
@@ -94,7 +94,7 @@ section {
 }
 
 /* All the headers of each section */
-.about-us h2, .our-mission h2 {
+.about-us h2, .our-mission h2, .events h2 {
     font-size: 4.875rem;
     font-weight: 700;
     line-height: 1.6;
@@ -117,10 +117,9 @@ section {
 
 /* OUR MISSION Section */
 .our-mission {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -138,61 +137,57 @@ section {
     width: 60%;padding-bottom: 6rem;
 }
 
-/* Quotation mark in this section */
-.our-mission .six-ladies {
+.our-mission .six-ladies, .our-mission .four-women {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
-.our-mission .six-ladies .image-container {
+.our-mission .six-ladies .image-container, .our-mission .four-women .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
 }
 
-.our-mission .six-ladies img {
+.our-mission .six-ladies img, .our-mission .four-women img {
     border-radius: 17px;
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
-.our-mission .six-ladies .quote-container {
+.our-mission .six-ladies {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 30%;
 }
 
-.our-mission .six-ladies figure {
+.our-mission .six-ladies figure, .our-mission .four-women figure {
     color: var(--quote-text);
     font-size: 2.25rem;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
 }
 
-.our-mission .six-ladies .quote-container .quotation-mark {
+/* Quotation mark  */
+.our-mission .quotation-mark, .comments .quotation-mark {
     font-size: 3rem;
     font-weight: 700;
     color: var(--text-color);
-    text-align: left;
 }
 
-.our-mission .quote-author {
+/* The author of the quotes in quote */
+.our-mission .quote-author, .comments .quote-author {
     font-size: 2rem;
     color: var(--text-color);
 }
 
-
-
-.our-mission .four-women {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    text-align: center;
-    margin: auto;
+.our-mission .four-women .quote-container {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding-left: 6rem;
 }
 
 .on-a-mission {
@@ -200,26 +195,18 @@ section {
 }
 
 .our-mission .six-ladies, .our-mission .four-women, .on-a-mission {
-    padding-bottom: 6rem;
+    padding: 3rem;
 }
 
 /* EVENTS Section */
 .events h2{
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.6;
     background: var(--events-h2);
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;
-    margin: 3rem 0;
-    text-align: center;
-    /* font-family is inter */
-
 }
 
 .events p {
-    /* font-family: inter; */
     font-size: 3rem;
     font-weight: 400;
 }
@@ -246,29 +233,56 @@ section {
 }
 
 .comments h2 {
-    /* font-family: inter; */
-    font-size: 4.9rem;
-    font-weight: 700;
-    line-height: 1.6;
     background: var(--comments-h2);
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;
-    margin: 3rem 0;
-    text-align: left;
-    flex-wrap: wrap;
 }
 
 .comments p {
-    /* font-family: inder; */
-    font-weight: 400;
     font-size: 2.5rem;
 }
 
-/* Quotation mark in this section */
-.comments .quote {
-    font-size: 6rem;
+.comments .heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.comments .quote-container figure {
+    font-size: 2.25rem;
+    color: var(--quote-text);
+    width: 45%;
+}
+
+.comments .heading-container h3 {
+    background: var(--comments-h3);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 4rem;
     font-weight: 700;
+    line-height: 1.6;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.comments .quote-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.comments .quotation-mark {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
 }
 
 /* Tables responsiveness for the width of screen not greater than 760px */
