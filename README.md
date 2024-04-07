@@ -54,6 +54,21 @@ The initial design file for development is available [here](https://www.figma.co
 ## Code of Conduct
 Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing to ensure a positive and inclusive environment for all participants.
 
+## Our amazing Contributors🌟
+
+<br>
+<a href="https://github.com/MLSA-WGMIT/WGMIT-Website/graphs/contributors">
+<p align="center">
+  <img src="https://contrib.rocks/image?repo=MLSA-WGMIT/WGMIT-Website" />
+  </p>
+</a>
+
+<div align="center">
+  <h2 align="center">Kudos! Your contribution is greatly appreciated.<h2>
+<img src="https://c.tenor.com/kEOz87vlud0AAAAC/minions-yahoo.gif" />
+</div>
+
+
 ## License
 This project is licensed under the [MIT License](LICENSE). By contributing to this project, you agree to abide by the terms of this license.
 
