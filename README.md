@@ -1,7 +1,7 @@
 # Welcome to Our Open-Source Repository
 
 ## Project Overview
-This repository is dedicated to promoting diversity and inclusion in the tech community through a collaborative effort in UI/UX design, content creation, development, and documentation. We welcome contributions from individuals of all backgrounds, skill levels, and experiences.
+This repository is dedicated to promoting diversity and inclusion in the tech community through a collaborative effort in UI/UX design, content creation, development, and documentation. We welcome contributions from individuals of all backgrounds, skill levels, and experiences. Thank you!
 
 ## How to Contribute
 
